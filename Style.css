@@ -5,6 +5,11 @@
 }
 
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
 :root{
     --defult-color:#E95A08;
     --text-color:#6B7280;
@@ -97,9 +102,7 @@
     padding-bottom: 10px;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 .h-color{
     color: var(--defult-color);
@@ -164,6 +167,8 @@ body{
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 30px;
     gap: 20px;
+    width: 100%;
+    padding: 10px;
 }
 
 
@@ -174,6 +179,8 @@ body{
     align-items: center;
     justify-content: center;
     padding: 2px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .plants-cards:hover{
@@ -375,7 +382,7 @@ body{
     background-repeat: no-repeat;
     width: 100%;
     object-fit: cover;
-    background-size: 100%;
+    background-size: cover;
     height: 553px;
     margin-top: 40px;
 }
@@ -490,14 +497,203 @@ body{
 
 /* responsive tablet */
 
-@media (max-width: 1024px){
+@media (max-width: 1200px){
+   .hero-text  h1{
+    font-size: 45px;
+}
+
+.text-span{
+    font-size: 45px;
+}
+
+.hero-text p{
+   width: 80%;
+}
+
+.plants-grid-content{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+.Lastest-img-Content{
+    flex-direction: column;
+    align-items: center;
+}
+
+.Lastest-left{
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 }
+
+@media (max-width: 900px){
+    .plants-grid-content{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-content{
+     grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+
+}
+
+
+
+
+}
+
 
 /* responsive mobile device 
 */@media (max-width: 768px){
     .nav-item{
       display: none;
    }
+
+ .hero-content{
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.hero-text  h1{
+    font-size: 30px;
+}
+
+
+.text-span{
+    font-size: 30px;
+}
+
+.hero-text p{
+   width: 100%;
+}
+
+.plants-title{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.plants-text{
+    width: 100%;
+    font-size: 16px;
+}
+
+
+.plants-grid-content{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Flower_content{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.delfut-img{
+    display: none;
+    
+}
+
+
+.Flower_right{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Flower_left{
+    width: 100%;
+}
+
+
+.Lastest-img-Content{
+    flex-direction: column;
+    align-items: center;
+}
+
+.Lastest-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Lastest-img-Content{
+   width: 100%;
+}
+
+.parent img{
+   width: 500px;
+}
+
+
+.Lastest-text{
+    width: 100%;
+}
+
+.Lastest-title{
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.colorful-content h1{
+    font-size: 30px;
+}
+
+
+.footer-content{
+    display: grid;
+  
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+
+.footer-content{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px;
+}
+
+
+.footer-title{
+    grid-column: span 1;
+}
+
+.footer-title p {
+}
+
+
+}
+
+
+
+
+/* smoll deviced */
+
+@media (max-width: 550px){
+    .plants-grid-content{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.parent img{
+   width: 350px;
+}
+
 
 }
