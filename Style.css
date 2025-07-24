@@ -287,6 +287,86 @@ body{
     object-fit: cover;
 }
 
+/*  Latest  Deals */
+
+.Latest-Deals-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+
+.Lastest-text-content{
+     text-align: center;
+}
+
+
+.Lastest-title{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.Lastest-text{
+    width: 888px;
+    margin: 0 auto;
+    color: var(--text-color);
+    font-size: 17px;
+}
+
+
+
+.Lastest-img-Content{
+    margin-top: 150px;
+    display: flex;
+    gap: 30px;
+}
+
+.Lastest-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.parent{
+    position: relative;
+
+}
+
+
+.parent img{
+    border-radius: 20px;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+}
+
+.child{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.child h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.child a {
+    padding-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
 
 
 
