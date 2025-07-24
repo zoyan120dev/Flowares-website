@@ -339,6 +339,8 @@ body{
     background: radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
 }
 
+
+
 .child{
     position: absolute;
     left: 0;
@@ -421,4 +423,81 @@ body{
 
 .input-button button:hover{
     background-color: var(--hover);
+}
+
+
+
+.footer-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-title{
+    grid-column: span 2;
+}
+
+.footer-title p {
+   color: var(--text-color);
+   font-size: 25px;
+   line-height: 1.6;
+   max-width: 359px;
+   margin-top: 3px;
+}
+
+.footer-link{
+    list-style: none;
+}
+
+
+.footer-link li {
+    margin-top: 30px;
+}
+
+
+
+.footer-link li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color ease-in-out 0.6s;
+}
+
+
+.footer-link li a:hover{
+    color: black;
+}
+
+
+.footer-icone{
+    display: flex;
+    gap: 30px;
+}
+
+.footer-icone img{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+
+/* responsive tablet */
+
+@media (max-width: 1024px){
+
+}
+
+/* responsive mobile device 
+*/@media (max-width: 768px){
+    .nav-item{
+      display: none;
+   }
+
 }
