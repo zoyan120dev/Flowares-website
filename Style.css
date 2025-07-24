@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --defult-color:#E95A08;
+    --text-color:#6B7280;
+    --hover:#e95a0875;
+}
+
+/* navbar section */
+
+.heroArea{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+  width: 135px;
+  height: 82px;
+  object-fit: cover;
+}
+
+
+.nav-link{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item{
+     display: flex;
+     gap: 20px;
+     list-style: none;
+}
+
+
+.nav-item  li  a{
+   font-size: 20px;
+   text-decoration: none;
+   color: gray;
+   opacity: 80%;
+   transition: color ease-in-out 0.7s;
+}
+
+
+.nav-item li .active{
+    color: black;
+}
+
+
+.nav-item li a:hover{
+    color: black;
+}
+
+
+.navimg{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.navimg span{
+    font-size: 20px;
+}
+
+
+/* hero section */
+
+.hero-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 180px;
+}
+
+
+.hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hero-text  h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h-color{
+    color: var(--defult-color);
+}
+
+.text-span{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.hero-text p{
+    width: 570px;
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.3;
+    color: var(--text-color);
+}
+
+
+.hero-img img{
+   width: 100%;
+   height: auto;
+}
+
+
+
+.plants-section{
+    max-width: 1200px;
+    margin:  0 auto;
+    margin-top: 100px;
+}
+
+
+.plants_text_content{
+    text-align: center;
+}
+
+.plants-title{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.plants-title span{
+    color: var(--defult-color);
+}
+
+.plants-text{
+    width: 100%;
+    max-width: 888px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+
+
+.plants-grid-content{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+
+.plants-cards{
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+
+.plants-cards:hover{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+
+
+
+.plants-img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card-conent{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-conent span{
+    font-size: 20px;
+    font-weight:normal;
+}
+
+.card-conent h3{
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 8px;
+}
+
+
+.card-conent .card-btn{
+   background-color: var(--defult-color);
+   width: 100%;
+   border: none;
+   padding: 20px 80px;
+   margin-top: 20px;
+   border-radius: 6px;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   transition: all ease-in-out 0.7s;
+}
+
+
+.card-conent .card-btn:hover{
+    background-color: var(--hover);
+}
