@@ -227,3 +227,67 @@ body{
 .card-conent .card-btn:hover{
     background-color: var(--hover);
 }
+
+
+/* Flower-section */
+
+.Flower-section{
+    max-width: 1200px;
+    margin: 0 auto;
+   padding-top: 150px;
+   position: relative;
+}
+
+.Flower_content{
+    display: flex;
+    gap: 50px;
+    align-items: start;
+}
+
+.Flower_left{
+    width: 50%;
+}
+
+.Flower_left img{
+    width: 100%;
+    height: auto;
+}
+
+.Flower_right{
+    width: 50%;
+    margin-top: 20px;
+}
+
+
+.Flower_right h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.Flower_right ul {
+    margin-bottom: 50px;
+}
+
+.Flower_right ul li{
+    font-size: 18px;
+    color: var(--text-color);
+    line-height: 1.9;
+    margin-top: 30px;
+}
+
+.delfut-img{
+    position: absolute;
+    top: 0;
+    left: 380px;
+}
+
+.delfut-img img{
+    width: 286px;
+    height: 286px;
+    object-fit: cover;
+}
+
+
+
+
+
